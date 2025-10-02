@@ -15,10 +15,10 @@ export default function Card(props) {
 
     return (
         <article className='relative flex flex-col rounded-xl shadow bg-white w-4/5 min-w-[320px] max-w-[340px] md:flex-row md:justify-between md:items-center md:max-w-[800px]'>
-            <img src={props.img} className='object-cover w-full rounded-t-xl lg-img md:w-1/2 md:rounded-l-xl md:h-full'/>
-            <div className='article-content p-8 pt-11 md:py-4'>
+            <img src={props.img} className='object-cover w-full rounded-t-xl lg-img md:w-1/3 md:rounded-l-xl md:h-full'/>
+            <div className='article-content p-8'>
                 <h2 className='text-xl text-slate-600 font-bold'>{props.articleTitle}</h2>
-                <p className='text-sm mt-6 mb-10 leading-[1.7]'>{props.articleContent}</p>
+                <p className='text-sm my-6 leading-[1.7]'>{props.articleContent}</p>
                 <div className='flex gap-4 items-center'>
                     <img src={props.profile.src} alt={props.profile.alt} className='rounded-full w-10 h-10'/>
                     <div className='flex flex-col'>
@@ -32,3 +32,4 @@ export default function Card(props) {
         </article>
     )
 }
+
